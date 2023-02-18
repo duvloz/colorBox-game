@@ -1,0 +1,40 @@
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+#game {
+    width: 300px;
+    height: 300px;
+}
+
+#bottom{
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+button{
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20%;
+}
+.section{
+    width: 50%;
+    height: 50%;
+    opacity: 0.1;
+    float: left;
+}
+
+.section.active{
+    opacity: 2;
+}
+.section:nth-child(1){ background-color: red;  border-radius: 30% 0% 0% 0%;}
+.section:nth-child(2){ background-color: green; border-radius: 0% 30% 0% 0%;}
+.section:nth-child(3){ background-color: yellow; border-radius: 0% 0% 0% 30%;}
+.section:nth-child(4){ background-color: blue; border-radius: 0% 0% 30% 0%;}
